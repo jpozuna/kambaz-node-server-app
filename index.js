@@ -38,5 +38,9 @@ CourseRoutes(app);
 AssignmentRoutes(app);
 ModuleRoutes(app);
 EnrollmentRoutes(app);
+app.get("/", (req, res) => {
+  res.send(" Welcome to Full Stack Development!");
+});
+
 app.listen(4000);
 
